@@ -1,4 +1,4 @@
-package service;
+package com.pahana.service;
 
 import com.pahana.dao.CustomerDAO;
 import com.pahana.dto.CustomerDTO;
@@ -43,7 +43,7 @@ public class CustomerService {
         return customer;
     }
 
-    // Get all customers (convert list of model to DTO)
+    // Get all customers (convert list of com.pahana.model to DTO)
     public List<CustomerDTO> getAllCustomers() {
         try (Connection connection = DBConnection.getConnection()) {
             CustomerDAO customerDAO = new CustomerDAO(connection);

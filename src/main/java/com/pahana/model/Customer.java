@@ -1,14 +1,15 @@
-package dto;
+package com.pahana.model;
 
-public class CustomerDTO {
+public class Customer {
     private String accountNumber;
     private String name;
     private String address;
     private String phone;
     private int unitsConsumed;
 
-    // Full-args constructor
-    public CustomerDTO(String accountNumber, String name, String address, String phone, int unitsConsumed) {
+    public Customer() {}
+
+    public Customer(String accountNumber, String name, String address, String phone, int unitsConsumed) {
         this.accountNumber = accountNumber;
         this.name = name;
         this.address = address;
@@ -16,7 +17,7 @@ public class CustomerDTO {
         this.unitsConsumed = unitsConsumed;
     }
 
-    // Getters and setters for all fields
+    // Getters and setters
     public String getAccountNumber() { return accountNumber; }
     public void setAccountNumber(String accountNumber) { this.accountNumber = accountNumber; }
 

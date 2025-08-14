@@ -1,4 +1,4 @@
-package mapper;
+package com.pahana.mapper;
 
 import com.pahana.model.Customer;
 import com.pahana.dto.CustomerDTO;
