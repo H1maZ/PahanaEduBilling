@@ -43,7 +43,7 @@ public class CustomerService {
         return customer;
     }
 
-    // Get all customers (convert list of com.pahana.model to DTO)
+    // Get all customers (convert list of model to DTO)
     public List<CustomerDTO> getAllCustomers() {
         try (Connection connection = DBConnection.getConnection()) {
             CustomerDAO customerDAO = new CustomerDAO(connection);
@@ -61,6 +61,9 @@ public class CustomerService {
 
     // Get single customer by account number
     public CustomerDTO getCustomerByAccountNumber(String accountNumber) {
+        if (accountNumber == null || accountNumber.trim().isEmpty()) {
+            return null; // accountNumber is null or empty
+        }
         try (Connection connection = DBConnection.getConnection()) {
             CustomerDAO customerDAO = new CustomerDAO(connection);
             Customer customer = customerDAO.getCustomerByAccountNumber(accountNumber);
@@ -73,8 +76,8 @@ public class CustomerService {
 
     // Add a new customer
     public boolean addCustomer(CustomerDTO customerDTO) {
-        if (customerDTO.getName() == null || customerDTO.getName().isBlank()) {
-            return false; // name is required
+        if (customerDTO == null || customerDTO.getName() == null || customerDTO.getName().trim().isEmpty()) {
+            return false; // customerDTO is null or name is required
         }
         Customer customer = toModel(customerDTO);
         try (Connection connection = DBConnection.getConnection()) {
@@ -88,6 +91,9 @@ public class CustomerService {
 
     // Update customer details
     public boolean updateCustomer(CustomerDTO customerDTO) {
+        if (customerDTO == null || customerDTO.getName() == null || customerDTO.getName().trim().isEmpty()) {
+            return false; // customerDTO is null or name is required
+        }
         Customer customer = toModel(customerDTO);
         try (Connection connection = DBConnection.getConnection()) {
             CustomerDAO customerDAO = new CustomerDAO(connection);
@@ -100,6 +106,9 @@ public class CustomerService {
 
     // Delete a customer by account number
     public boolean deleteCustomer(String accountNumber) {
+        if (accountNumber == null || accountNumber.trim().isEmpty()) {
+            return false; // accountNumber is null or empty
+        }
         try (Connection connection = DBConnection.getConnection()) {
             CustomerDAO customerDAO = new CustomerDAO(connection);
             return customerDAO.deleteCustomer(accountNumber);
