@@ -43,8 +43,8 @@
                     <p>To access the system, you need to log in with valid credentials:</p>
                     <ul class="step-list">
                         <li>Navigate to the login page</li>
-                        <li>Enter username: <strong>admin</strong></li>
-                        <li>Enter password: <strong>admin123</strong></li>
+                        <li>Enter username: <strong>staff</strong></li>
+                        <li>Enter password: <strong>staff123</strong></li>
                         <li>Click "Login" to access the dashboard</li>
                     </ul>
                 </div>
