@@ -1,0 +1,23 @@
+# ---- Maven ----
+target/
+*.war
+*.ear
+*.class
+
+# ---- IntelliJ IDEA ----
+.idea/
+*.iml
+*.iws
+out/
+
+# ---- Logs ----
+*.log
+
+# ---- OS-specific ----
+.DS_Store
+Thumbs.db
+
+# ---- Backup files ----
+*.swp
+*.swo
+*~
