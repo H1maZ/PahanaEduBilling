@@ -9,11 +9,13 @@ A comprehensive **Bookshop Management System** built with Java Servlets, JSP, an
 - **Book Listing**: View all books with search and filter capabilities
 - **Stock Management**: Automatic stock updates during sales
 - **Book Images**: Support for book cover images
+<img width="1382" height="739" alt="image" src="https://github.com/user-attachments/assets/742f6368-8032-4c32-81f2-f2a606e6b2bc" />
 
 ### 👥 Customer Management
 - **Customer Registration**: Add new customers with account numbers
 - **Customer Directory**: View and manage customer information
 - **Customer Search**: Find customers by name or account number
+<img width="1382" height="734" alt="image" src="https://github.com/user-attachments/assets/a72afac9-ac88-484a-850b-0b90bb9378b2" />
 
 ### 🛒 Shopping Cart & Billing
 - **Shopping Cart**: Add books to cart with quantity management
@@ -21,16 +23,21 @@ A comprehensive **Bookshop Management System** built with Java Servlets, JSP, an
 - **Invoice Generation**: Automatic invoice creation with unique IDs
 - **Billing History**: View and reprint past invoices
 - **Payment Tracking**: Track payment status for all transactions
+<img width="1393" height="591" alt="Screenshot 2025-08-19 172522" src="https://github.com/user-attachments/assets/a2150079-da5f-4b01-89ea-9716e48fcdc0" />
+
 
 ### 📊 Dashboard & Analytics
 - **Dashboard Overview**: Real-time statistics on books and customers
 - **Sales Reports**: Comprehensive billing history and reports
 - **System Monitoring**: Track inventory and sales performance
+<img width="1382" height="594" alt="image" src="https://github.com/user-attachments/assets/dee28c21-bfa1-444f-81a9-2299396d3e81" />
+
 
 ### 🔐 Security & Authentication
 - **User Authentication**: Secure login system
 - **Session Management**: Protected routes and session handling
 - **Access Control**: Role-based access to different modules
+<img width="414" height="483" alt="image" src="https://github.com/user-attachments/assets/b4e6e522-151c-4997-845b-6880da8cb8ca" />
 
 ## 🛠️ Technology Stack
 
