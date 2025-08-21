@@ -70,7 +70,7 @@ cd PahanaEduBilling
 1. **Create MySQL Database**:
    ```sql
    CREATE DATABASE pahana_edu;
-   USE pahana_edu;
+   USE pahana_edu database.sql;
    ```
 
 2. **Create Required Tables** (you'll need to create these based on your DTOs):
